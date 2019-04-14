@@ -1,0 +1,62 @@
+body
+{
+    background : linear-gradient(180deg,#262626,#ffffff);
+}
+.nav
+{
+    background-color:  #efba43;
+}
+
+.box
+{
+    
+    width: 49vw;
+    height: 80vh;
+    margin: 2%;
+    text-align: center;
+    
+}
+
+.main
+{
+    display: inline-flex;
+    height: 89vh;
+    margin: 1%;
+}
+
+.cont
+{
+    margin: 1%;
+    height: 100%;
+    padding-top: 15vh;
+    align-items: center;
+}
+
+.but
+{
+    margin: 2%;
+    background: #efba43;
+    width: 60%;
+    height: 10vh;
+    border-radius: 5px;
+    border-color: #efba43;
+}
+
+.sp
+{
+    background-color: #efba43;
+}
+
+.floater
+{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    background-color: #efba43;
+    color: #ffffff;
+}
+
+#h
+{
+    line-height: 5vh;
+}

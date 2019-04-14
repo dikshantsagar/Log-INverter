@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/ media="all">
+ 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar nav navbar-expand-sm text-light">
+       <ul class="navbar-nav">
+           <li class="nav-item" style="margin: 0px 10px;">
+            <button class="btn text-light" id="home"><h3 class="fas fa-home"></h3></button>
+                
+           </li>
+           <li class="nav-item">
+                <h3 id="h">Log-INverter</h3>
+           </li>
+       </ul>
+    </nav>
+    <div class="main card" style="padding:1%;" id="mcard">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th> ID</th>
+                    <th> Name</th>
+                    <th> Salary</th>
+                    <th> Address</th>
+                    <th> Phone</th>
+                    <th> No. Of Sales</th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                
+            </tbody>
+        </table>
+        <div class="container" style="text-align:center; margin-top:20%;" id="loader">
+            <div class="spinner-grow sp"></div>
+            <div class="spinner-grow sp"></div>
+            <div class="spinner-grow sp "></div>
+            <div class="spinner-grow sp"></div>
+        </div>
+        
+    </div>
+    <button class="btn btn-warning floater" data-toggle="modal" data-target="#myModal"> Add Employee</button>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Add Employee</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <label>ID :</label><br>
+              <input type="text" id="id"><br><br>
+              <label>Name :</label><br>
+              <input type="text" id="name"><br><br>
+              <label>Salary :</label><br>
+              <input type="text" id="sal"><br>
+              <label>Address :</label><br>
+              <input type="text" id="addr"><br><br>
+              <label>Phone :</label><br>
+              <input type="text" id="phone"><br><br>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-dismiss="modal" id="add" >Add</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    <script src="emp.js"></script>
+</body>
+</html>
